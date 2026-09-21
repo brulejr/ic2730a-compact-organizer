@@ -15,10 +15,13 @@ stacked directly on top of the battery box, so only the left and right walls are
 cutouts — the top is the lid and the back wall is against the stack.
 
 Cooling is vented forced air: a filtered intake on the left wall and a Noctua fan exhausting on the
-right, pulling air directly across the radio. A sealed conduction-plate approach was ruled out because
-the box's floor sits flush on the battery box below it — there is no ambient air on the far side of the
-floor for heat to go. The left-wall vent is positioned so the truck's A/C could eventually be ducted
-into it for extra cooling on hot runs.
+right, pulling air directly across the radio. The IC-2730A has its own fan at the heatsink end, and the
+case fan sits directly behind both it and the adjacent heatsink — so the case fan's job is to carry that
+discharge out of the box, not to drive air through the fin channels itself. That is why the case fan's
+height is not tied to the heatsink's fin-channel direction. A sealed conduction-plate approach was ruled
+out because the box's floor sits flush on the battery box below it — there is no ambient air on the far
+side of the floor for heat to go. The left-wall vent is positioned so the truck's A/C could eventually
+be ducted into it for extra cooling on hot runs.
 
 Power and control cabling (DC power, console/control-head cable) route out the left wall; antenna and
 speaker audio route out the right wall. This keeps DC and switching noise away from the RF and audio
@@ -101,7 +104,8 @@ entry, twisted/separated runs).
    divider if RPM feedback is wanted, DS18B20 data line with its pull-up, probe bonded to the heatsink.
 8. **Seat the sub-assembly** — Press the finished radio-and-plate assembly onto the Dual Lock in the
    case. Connect the console, antenna, speaker, and power runs to their bulkheads. Confirm the fan and
-   vent line up with the airflow path under the radio's standoffs before closing the lid.
+   vent sit in the radio's own airflow path before closing the lid — the case fan should be pulling in
+   the same direction the radio's fan discharges, not opposing it, with clearance between the two.
 9. **Final check** — Power up, confirm ESP32 reads a sane temperature, fan responds to PWM commands, and
    TX current draw and cable dressing look correct before the box goes into the truck.
 
@@ -109,9 +113,8 @@ entry, twisted/separated runs).
 
 ## 5. Still Open
 
-- [ ] Heatsink fin-channel direction on the physical ICOM unit — sets exact fan height alignment for
-      effective airflow under the standoffs.
-- [ ] Standoff height (reused hardware) — needed to finalize that same alignment.
+- [ ] Standoff height (reused hardware) — sets the clearance for airflow under the radio and confirms
+      the stack still fits under the lid.
 - [ ] Master power switch not yet chosen — needs its own cutout on the left wall alongside the PowerPole
       mount (not integrated into that design).
 - [ ] Filtered vent open area — media is settled (120 µm polyester monofilament mesh), but the 40×40mm

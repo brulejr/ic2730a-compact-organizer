@@ -154,7 +154,11 @@ E.append(Paragraph(
 E.append(Spacer(1, 6))
 E.append(Paragraph(
     "Cooling is vented forced air: a filtered intake on the left wall and a Noctua fan exhausting on "
-    "the right, pulling air directly across the radio. A sealed conduction-plate approach was ruled out "
+    "the right, pulling air directly across the radio. The IC-2730A has its own fan at the heatsink "
+    "end, and the case fan sits directly behind both it and the adjacent heatsink &mdash; so the case "
+    "fan's job is to carry that discharge out of the box, not to drive air through the fin channels "
+    "itself. That is why the case fan's height is not tied to the heatsink's fin-channel direction. "
+    "A sealed conduction-plate approach was ruled out "
     "because the box's floor sits flush on the battery box below it &mdash; there is no ambient air on "
     "the far side of the floor for heat to go. The left-wall vent is positioned so the truck's A/C could "
     "eventually be ducted into it for extra cooling on hot runs.", body))
@@ -264,8 +268,9 @@ steps = [
      "DS18B20 data line with its pull-up, probe bonded to the heatsink."),
     ("Seat the sub-assembly",
      "Press the finished radio-and-plate assembly onto the Dual Lock in the case. Connect the console, "
-     "antenna, speaker, and power runs to their bulkheads. Confirm the fan and vent line up with the "
-     "airflow path under the radio's standoffs before closing the lid."),
+     "antenna, speaker, and power runs to their bulkheads. Confirm the fan and vent sit in the radio's "
+     "own airflow path before closing the lid — the case fan should be pulling in the same "
+     "direction the radio's fan discharges, not opposing it, with clearance between the two."),
     ("Final check",
      "Power up, confirm ESP32 reads a sane temperature, fan responds to PWM commands, and TX current "
      "draw and cable dressing look correct before the box goes into the truck."),
@@ -285,9 +290,8 @@ E.append(PageBreak())
 # --- Open items ---
 E += section("5. Still Open")
 open_items = [
-    "Heatsink fin-channel direction on the physical ICOM unit \u2014 sets exact fan height alignment "
-    "for effective airflow under the standoffs.",
-    "Standoff height (reused hardware) \u2014 needed to finalize that same alignment.",
+    "Standoff height (reused hardware) \u2014 sets the clearance for airflow under the radio and "
+    "confirms the stack still fits under the lid.",
     "Master power switch not yet chosen \u2014 needs its own cutout on the left wall alongside the "
     "PowerPole mount (not integrated into that design).",
     "Filtered vent open area \u2014 media is settled (120 \u00b5m polyester monofilament mesh), but the "
