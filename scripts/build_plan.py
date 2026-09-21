@@ -167,7 +167,9 @@ E.append(Paragraph(
     "Power and control cabling (DC power, console/control-head cable) route out the left wall; "
     "antenna and speaker audio route out the right wall. This keeps DC and switching noise away from "
     "the RF and audio paths, consistent with the noise-isolation practice used elsewhere in the build "
-    "(ferrite choke at the DC entry, twisted/separated runs).", body))
+    "(ferrite choke at the DC entry, twisted/separated runs). There is no master power switch &mdash; "
+    "the PowerPole disconnect already serves that role, and a switch on this box would sit out of "
+    "reach of the operating position.", body))
 E.append(Spacer(1, 10))
 E.append(KeepTogether([Paragraph("Floor Plan", h2), floor_plan_drawing()]))
 
@@ -186,7 +188,7 @@ parts_data = [
     [p("Filtered vent"), p("Left wall, center"), p("40\u00d740mm frame \u00b7 32\u00d732mm hole spacing (provisional \u2014 matches the fan footprint)"),
      p("Media: 120 µm polyester monofilament mesh, washable, clamped between shroud and the <b>outside</b> face of the wall so it cleans without opening the box. TPU-printed shroud, ~95A shore hardness; one shroud design can serve both fan and vent; actual open-air area still depends on shroud design")],
     [p("PowerPole bulkhead"), p("Left wall, front row"), p("34.2\u00d717.2mm flange \u00b7 19.1\u00d711.2mm through-box cutout \u00b7 2\u00d7 \u2205 3.7mm holes, 26.7mm apart"),
-     p("Printed tower mount, flange-flush \u2014 connector body hides inside the box, not proud of the wall; master switch still needs its own cutout")],
+     p("Printed tower mount, flange-flush \u2014 connector body hides inside the box, not proud of the wall. Doubles as the box's power disconnect")],
     [p("Console bulkhead (RJ11/12)"), p("Left wall, back row"), p("21 mm round \u00b7 flat side to 19 mm \u2014 drill round, file the flat"),
      p("Weatherproof, tethered threaded cap, pigtail lead (not a straight pass-through)")],
     [p("ESP32 dev board"), p("Floor, back wall, ~50 mm in from right, 100 mm wide"), p("&mdash;"),
@@ -292,8 +294,6 @@ E += section("5. Still Open")
 open_items = [
     "Standoff height (reused hardware) \u2014 sets the clearance for airflow under the radio and "
     "confirms the stack still fits under the lid.",
-    "Master power switch not yet chosen \u2014 needs its own cutout on the left wall alongside the "
-    "PowerPole mount (not integrated into that design).",
     "Filtered vent open area \u2014 media is settled (120 \u00b5m polyester monofilament mesh), but the "
     "40\u00d740mm frame is still provisional, matched to the fan's footprint (see the appendix "
     "template); confirm once the shroud design fixes the actual open-air passage.",

@@ -256,8 +256,6 @@ body_lines = [
     "where a dotted line meets the edge of the sheet, cut, rotate the sheet, and repeat for all four sides",
     "to trim the rectangle out squarely. Then cut the finer dashed/round shape inside it by hand.",
     "",
-    "Not templated yet: the master power switch (not chosen, and would need its own cutout).",
-    "",
     "This appendix is padded with blank pages so every template's reverse side is blank \u2014 safe to print",
     "single-sided or duplex.",
 ]

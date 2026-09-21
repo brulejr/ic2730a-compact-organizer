@@ -26,7 +26,8 @@ be ducted into it for extra cooling on hot runs.
 Power and control cabling (DC power, console/control-head cable) route out the left wall; antenna and
 speaker audio route out the right wall. This keeps DC and switching noise away from the RF and audio
 paths, consistent with the noise-isolation practice used elsewhere in the build (ferrite choke at the DC
-entry, twisted/separated runs).
+entry, twisted/separated runs). There is no master power switch — the PowerPole disconnect already
+serves that role, and a switch on this box would sit out of reach of the operating position.
 
 ### Floor Plan
 
@@ -42,7 +43,7 @@ entry, twisted/separated runs).
 | TRRS bulkhead | Right wall, front row | 22 mm dia., 30 mm depth | Speaker output |
 | Fan — Noctua NF-A4x20 5V PWM | Right wall, center | 40×40×20 mm, 32×32 mm hole spacing | 4-pin true PWM, powered from 5V buck rail, not raw 12V |
 | Filtered vent | Left wall, center | 40×40mm frame · 32×32mm hole spacing (provisional — matches the fan footprint) | Media: 120 µm polyester monofilament mesh, washable, clamped between shroud and the **outside** face of the wall so it cleans without opening the box. TPU-printed shroud, ~95A shore hardness; one shroud design can serve both fan and vent; actual open-air area still depends on shroud design |
-| PowerPole bulkhead | Left wall, front row | 34.2×17.2mm flange · 19.1×11.2mm through-box cutout · 2× ⌀3.7mm holes, 26.7mm apart | Printed tower mount, flange-flush — connector body hides inside the box, not proud of the wall; master switch still needs its own cutout |
+| PowerPole bulkhead | Left wall, front row | 34.2×17.2mm flange · 19.1×11.2mm through-box cutout · 2× ⌀3.7mm holes, 26.7mm apart | Printed tower mount, flange-flush — connector body hides inside the box, not proud of the wall. Doubles as the box's power disconnect |
 | Console bulkhead (RJ11/12) | Left wall, back row | 21 mm round · flat side to 19 mm — drill round, file the flat | Weatherproof, tethered threaded cap, pigtail lead (not a straight pass-through) |
 | ESP32 dev board | Floor, back wall, ~50 mm in from right, 100 mm wide | — | Fan PWM control, tach (with divider), DS18B20 read, temp logging |
 | Buck converter (12V→5V) | Same shelf as ESP32 | Automotive-transient rated | Feeds ESP32 and fan; not the radio |
@@ -115,8 +116,6 @@ entry, twisted/separated runs).
 
 - [ ] Standoff height (reused hardware) — sets the clearance for airflow under the radio and confirms
       the stack still fits under the lid.
-- [ ] Master power switch not yet chosen — needs its own cutout on the left wall alongside the PowerPole
-      mount (not integrated into that design).
 - [ ] Filtered vent open area — media is settled (120 µm polyester monofilament mesh), but the 40×40mm
       frame is still provisional, matched to the fan's footprint (see the appendix template in the PDF);
       confirm once the shroud design fixes the actual open-air passage.
