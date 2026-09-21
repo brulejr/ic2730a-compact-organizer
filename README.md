@@ -113,8 +113,6 @@ serves that role, and a switch on this box would sit out of reach of the operati
 
 ## 5. Still Open
 
-- [ ] Standoff height (reused hardware) — sets the clearance for airflow under the radio and confirms
-      the stack still fits under the lid.
 - [ ] Filtered vent open area — media is settled (120 µm polyester monofilament mesh), but the 40×40mm
       frame is still provisional, matched to the fan's footprint (see the appendix template in the PDF);
       confirm once the shroud design fixes the actual open-air passage.

@@ -291,8 +291,6 @@ E.append(PageBreak())
 # --- Open items ---
 E += section("5. Still Open")
 open_items = [
-    "Standoff height (reused hardware) \u2014 sets the clearance for airflow under the radio and "
-    "confirms the stack still fits under the lid.",
     "Filtered vent open area \u2014 media is settled (120 \u00b5m polyester monofilament mesh), but the "
     "40\u00d740mm frame is still provisional, matched to the fan's footprint (see the appendix "
     "template); confirm once the shroud design fixes the actual open-air passage.",
