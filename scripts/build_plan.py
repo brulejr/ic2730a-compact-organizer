@@ -180,7 +180,7 @@ parts_data = [
     [p("Fan &mdash; Noctua NF-A4x20 5V PWM"), p("Right wall, center"), p("40\u00d740\u00d720 mm, 32\u00d732 mm hole spacing"),
      p("4-pin true PWM, powered from 5V buck rail, not raw 12V")],
     [p("Filtered vent"), p("Left wall, center"), p("40\u00d740mm frame \u00b7 32\u00d732mm hole spacing (provisional \u2014 matches the fan footprint)"),
-     p("TPU-printed shroud, ~95A shore hardness; one shroud design can serve both fan and vent; actual open-air area still depends on filter media")],
+     p("Media: 120 µm polyester monofilament mesh, washable, clamped between shroud and the <b>outside</b> face of the wall so it cleans without opening the box. TPU-printed shroud, ~95A shore hardness; one shroud design can serve both fan and vent; actual open-air area still depends on shroud design")],
     [p("PowerPole bulkhead"), p("Left wall, front row"), p("34.2\u00d717.2mm flange \u00b7 19.1\u00d711.2mm through-box cutout \u00b7 2\u00d7 \u2205 3.7mm holes, 26.7mm apart"),
      p("Printed tower mount, flange-flush \u2014 connector body hides inside the box, not proud of the wall; master switch still needs its own cutout")],
     [p("Console bulkhead (RJ11/12)"), p("Left wall, back row"), p("21 mm round \u00b7 flat side to 19 mm \u2014 drill round, file the flat"),
@@ -290,8 +290,9 @@ open_items = [
     "Standoff height (reused hardware) \u2014 needed to finalize that same alignment.",
     "Master power switch not yet chosen \u2014 needs its own cutout on the left wall alongside the "
     "PowerPole mount (not integrated into that design).",
-    "Filtered vent \u2014 provisionally sized to match the fan's 40\u00d740mm/32\u00d732mm footprint (see the "
-    "appendix template); confirm once filter media and shroud design are chosen.",
+    "Filtered vent open area \u2014 media is settled (120 \u00b5m polyester monofilament mesh), but the "
+    "40\u00d740mm frame is still provisional, matched to the fan's footprint (see the appendix "
+    "template); confirm once the shroud design fixes the actual open-air passage.",
     "TPU shroud dimensions for the vent and fan \u2014 not yet drawn.",
     "Truck-A/C duct into the intake vent \u2014 floated as a nice-to-have, not committed.",
 ]

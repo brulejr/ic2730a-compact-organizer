@@ -38,7 +38,7 @@ entry, twisted/separated runs).
 | SO-239 bulkhead | Right wall, back row | 16 mm hole, 25×25 mm flange, 22 mm depth | Chassis-mount UHF female, solder-cup |
 | TRRS bulkhead | Right wall, front row | 22 mm dia., 30 mm depth | Speaker output |
 | Fan — Noctua NF-A4x20 5V PWM | Right wall, center | 40×40×20 mm, 32×32 mm hole spacing | 4-pin true PWM, powered from 5V buck rail, not raw 12V |
-| Filtered vent | Left wall, center | 40×40mm frame · 32×32mm hole spacing (provisional — matches the fan footprint) | TPU-printed shroud, ~95A shore hardness; one shroud design can serve both fan and vent; actual open-air area still depends on filter media |
+| Filtered vent | Left wall, center | 40×40mm frame · 32×32mm hole spacing (provisional — matches the fan footprint) | Media: 120 µm polyester monofilament mesh, washable, clamped between shroud and the **outside** face of the wall so it cleans without opening the box. TPU-printed shroud, ~95A shore hardness; one shroud design can serve both fan and vent; actual open-air area still depends on shroud design |
 | PowerPole bulkhead | Left wall, front row | 34.2×17.2mm flange · 19.1×11.2mm through-box cutout · 2× ⌀3.7mm holes, 26.7mm apart | Printed tower mount, flange-flush — connector body hides inside the box, not proud of the wall; master switch still needs its own cutout |
 | Console bulkhead (RJ11/12) | Left wall, back row | 21 mm round · flat side to 19 mm — drill round, file the flat | Weatherproof, tethered threaded cap, pigtail lead (not a straight pass-through) |
 | ESP32 dev board | Floor, back wall, ~50 mm in from right, 100 mm wide | — | Fan PWM control, tach (with divider), DS18B20 read, temp logging |
@@ -114,8 +114,9 @@ entry, twisted/separated runs).
 - [ ] Standoff height (reused hardware) — needed to finalize that same alignment.
 - [ ] Master power switch not yet chosen — needs its own cutout on the left wall alongside the PowerPole
       mount (not integrated into that design).
-- [ ] Filtered vent — provisionally sized to match the fan's 40×40mm/32×32mm footprint (see the appendix
-      template in the PDF); confirm once filter media and shroud design are chosen.
+- [ ] Filtered vent open area — media is settled (120 µm polyester monofilament mesh), but the 40×40mm
+      frame is still provisional, matched to the fan's footprint (see the appendix template in the PDF);
+      confirm once the shroud design fixes the actual open-air passage.
 - [ ] TPU shroud dimensions for the vent and fan — not yet drawn.
 - [ ] Truck-A/C duct into the intake vent — floated as a nice-to-have, not committed.
 

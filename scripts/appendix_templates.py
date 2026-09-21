@@ -384,7 +384,8 @@ caption_lines_vent = [
     "Filtered Vent \u2014 Intake",
     "40 \u00d7 40 mm frame \u00b7 32 \u00d7 32 mm hole spacing \u2014 provisionally matched to the fan's own",
     "mounting footprint so one TPU shroud design can serve both. Confirm before finalizing \u2014 the",
-    "actual open-air passage size still depends on your filter media and shroud design (Section 5).",
+    "actual open-air passage size still depends on your shroud design (Section 5).",
+    "Media: 120 \u00b5m polyester monofilament mesh, clamped against the outside face of the wall.",
     "Left wall, center \u2014 directly opposite the fan.",
 ]
 cap_top = CY - 50 * MM / 2 - 26
