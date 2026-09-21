@@ -149,8 +149,14 @@ PowerPole) with paper-cutter alignment guides — print it at Actual Size, not "
 │   └── floor-plan.png                              — floor plan diagram used above
 ├── stl/
 │   └── README.md              — third-party STL sourcing (not redistributed here)
-└── photos/
-    └── README.md              — expected build-photo filenames
+├── photos/
+│   └── README.md              — expected build-photo filenames
+└── scripts/                   — Python source that generates the PDF + diagram
+    ├── build_plan.py
+    ├── appendix_templates.py
+    ├── export_floorplan_png.py
+    ├── build_all.py            — run this to regenerate everything
+    └── requirements.txt
 ```
 
 ## License
