@@ -20,8 +20,7 @@ case fan sits directly behind both it and the adjacent heatsink — so the case 
 discharge out of the box, not to drive air through the fin channels itself. That is why the case fan's
 height is not tied to the heatsink's fin-channel direction. A sealed conduction-plate approach was ruled
 out because the box's floor sits flush on the battery box below it — there is no ambient air on the far
-side of the floor for heat to go. The left-wall vent is positioned so the truck's A/C could eventually
-be ducted into it for extra cooling on hot runs.
+side of the floor for heat to go.
 
 Power and control cabling (DC power, console/control-head cable) route out the left wall; antenna and
 speaker audio route out the right wall. This keeps DC and switching noise away from the RF and audio
@@ -120,7 +119,6 @@ serves that role, and a switch on this box would sit out of reach of the operati
       frame is still provisional, matched to the fan's footprint (see the appendix template in the PDF);
       confirm once the shroud design fixes the actual open-air passage.
 - [ ] TPU shroud dimensions for the vent and fan — not yet drawn.
-- [ ] Truck-A/C duct into the intake vent — floated as a nice-to-have, not committed.
 
 ---
 

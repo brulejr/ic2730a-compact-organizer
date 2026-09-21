@@ -160,8 +160,7 @@ E.append(Paragraph(
     "itself. That is why the case fan's height is not tied to the heatsink's fin-channel direction. "
     "A sealed conduction-plate approach was ruled out "
     "because the box's floor sits flush on the battery box below it &mdash; there is no ambient air on "
-    "the far side of the floor for heat to go. The left-wall vent is positioned so the truck's A/C could "
-    "eventually be ducted into it for extra cooling on hot runs.", body))
+    "the far side of the floor for heat to go.", body))
 E.append(Spacer(1, 6))
 E.append(Paragraph(
     "Power and control cabling (DC power, console/control-head cable) route out the left wall; "
@@ -298,7 +297,6 @@ open_items = [
     "40\u00d740mm frame is still provisional, matched to the fan's footprint (see the appendix "
     "template); confirm once the shroud design fixes the actual open-air passage.",
     "TPU shroud dimensions for the vent and fan \u2014 not yet drawn.",
-    "Truck-A/C duct into the intake vent \u2014 floated as a nice-to-have, not committed.",
 ]
 for t in open_items:
     E.append(Paragraph("[ ]&nbsp;&nbsp;" + t, body))
